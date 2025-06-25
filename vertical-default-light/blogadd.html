@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -15,19 +15,17 @@
   <link rel="stylesheet" href="../assets/vendors/simple-line-icons/css/simple-line-icons.css">
   <link rel="stylesheet" href="../assets/vendors/css/vendor.bundle.base.css">
   <link rel="stylesheet" href="../assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css">
-  
+  <link rel="stylesheet" href="../../../assets/vendors/dropify/dropify.min.css">
   <!-- endinject -->
   <!-- Plugin css for this page -->
   <link rel="stylesheet" href="../assets/vendors/datatables.net-bs4/dataTables.bootstrap4.css">
   <link rel="stylesheet" type="text/css" href="../assets/js/select.dataTables.min.css">
+   <link rel="stylesheet" href="../../../assets/vendors/quill/quill.snow.css">
   <!-- End plugin css for this page -->
   <!-- inject:css -->
   <link rel="stylesheet" href="../assets/css/vertical-layout-light/style.css">
   <!-- endinject -->
   <link rel="shortcut icon" href="../assets/images/favicon.png">
-  <style>
-  
-  </style>
 </head>
 
 <body class="with-welcome-text">
@@ -54,7 +52,7 @@
       </div>
     </div>
     <!-- partial:partials/_navbar.html -->
-    <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
+     <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
   <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
     <div class="me-3">
       <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-bs-toggle="minimize">
@@ -74,7 +72,7 @@
   <div class="navbar-menu-wrapper d-flex align-items-top">
     <ul class="navbar-nav">
       <li class="nav-item fw-semibold d-none d-lg-block ms-0">
-        <h1 class="welcome-text">Welcome, <span class="text-black fw-bold"><img src="/assets/images/hand.gif" width="50" alt=""></span></h1>
+         <h1 class="welcome-text">Welcome, <span class="text-black fw-bold"><img src="/assets/images/hand.gif" width="50" alt=""></span></h1>
 
       </li>
     </ul>
@@ -304,7 +302,7 @@
         <span class="menu-title">Projects</span>
       </a>
     </li>
-    <li class="nav-item">
+   <li class="nav-item">
       <a class="nav-link" href="bloglist.html">
         <i class="mdi mdi-grid-large menu-icon position-relative"></i>
         <span class="menu-title">Blog</span>
@@ -317,7 +315,7 @@
         <!-- <span class="badge badge-outline-primary rounded fw-bold"> PRO </span> -->
       </a>
     </li>
-     <li class="nav-item">
+   <li class="nav-item">
       <a class="nav-link" href="Categories.html">
         <i class="mdi mdi-cube-outline menu-icon"></i>
         <span class="menu-title">Categories</span>
@@ -333,89 +331,180 @@
           <div class="row">
             <div class="col-sm-12">
               <div class="home-tab">
-                <div class="d-sm-flex align-items-center justify-content-end border-bottom">
-                  <div>
-                    <div class="btn-wrapper">
-                      <a href="addproject.html" class="btn btn-primary text-white me-0"><i class="icon-download"></i> Add</a>
+                <div class="d-sm-flex align-items-center justify-content-between border-bottom">
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active ps-0" id="home-tab" data-bs-toggle="tab" href="#herosetion" role="tab" aria-controls="herosetion" aria-selected="true">Hero Section</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#blogcontent" role="tab"  aria-selected="false">Blog Content</a>
+                    </li>
+                  </ul>
+                  
+                </div>
+                <div class="tab-content tab-content-basic">
+                  <div class="tab-pane fade show active" id="herosetion" role="tabpanel" aria-labelledby="herosetion">
+                    <div class="row">
+                      <div class="col-md-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Blog Add</h4>
+                  <p class="card-description">eem Brading </p>
+                  <form class="forms-sample">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                      <label for="exampleInputUsername1">Blog Title</label>
+                      <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Username">
+                    </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                      <label for="exampleInputurl1">Blog Url</label>
+                      <input type="url" class="form-control" id="exampleInputurl1" placeholder="url">
+                    </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                      <label for="exampleInputmetatitle1">Meta Title</label>
+                      <input type="text" class="form-control" id="exampleInputmetatitle1" placeholder="meta title">
+                    </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                      <label for="exampleInputMetaDescription1">Meta Description</label>
+                      <input type="text" class="form-control" id="exampleInputMetaDescription1" placeholder="Meta Description">
+                    </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                      <label for="exampleInputBlogDescription1">Blog Description</label>
+                      <input type="text" class="form-control" id="exampleInputBlogDescription1" placeholder="Blog Description">
+                    </div>
+                        </div>
+                         <div class="col-lg-5 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title d-flex">Upload Blog Image
+                  </h4>
+                  <input type="file" class="dropify">
+                </div>
+              </div>
+            </div>
+  <!-- OG Image Upload & Checkbox -->
+  <div class="col-lg-2 grid-margin stretch-card">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title d-flex">Upload OG Image</h4>
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" id="toggleBlogImage">
+          Add Different OG Image
+          <i class="input-helper"></i>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Blog Image Upload (Hidden by default) -->
+  <div class="col-lg-5 grid-margin stretch-card" id="blogImageCard" style="display: none;">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title d-flex">Upload OG Image</h4>
+        <input type="file" class="dropify">
+      </div>
+    </div>
+  </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group" data-select2-id="7">
+                    <label>Category</label>
+                    <select class="js-example-basic-single w-100 select2-hidden-accessible" data-select2-id="1" tabindex="-1" aria-hidden="true">
+                      <option value="AL" data-select2-id="3">Alabama</option>
+                      <option value="WY" data-select2-id="18">Wyoming</option>
+                      <option value="AM" data-select2-id="19">America</option>
+                      <option value="CA" data-select2-id="20">Canada</option>
+                      <option value="RU" data-select2-id="21">Russia</option>
+                    </select><span class="select2 select2-container select2-container--default select2-container--below select2-container--focus" dir="ltr" data-select2-id="2" style="width: 541.9px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-6syr-container"><span class="select2-selection__rendered" id="select2-6syr-container" role="textbox" aria-readonly="true" title="Alabama">Alabama</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                  </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group" data-select2-id="7">
+                    <label>Author</label>
+                    <select class="js-example-basic-single w-100 select2-hidden-accessible" data-select2-id="1" tabindex="-1" aria-hidden="true">
+                      <option value="AL" data-select2-id="3">Alabama</option>
+                      <option value="WY" data-select2-id="18">Wyoming</option>
+                      <option value="AM" data-select2-id="19">America</option>
+                      <option value="CA" data-select2-id="20">Canada</option>
+                      <option value="RU" data-select2-id="21">Russia</option>
+                    </select><span class="select2 select2-container select2-container--default select2-container--below select2-container--focus" dir="ltr" data-select2-id="2" style="width: 541.9px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-6syr-container"><span class="select2-selection__rendered" id="select2-6syr-container" role="textbox" aria-readonly="true" title="Alabama">Alabama</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                  </div>
+                        </div>
+                       
+                        <div class="col-md-12">
+                            <div class="form-group">
+      <label for="publishDate">Publish Date & Time</label>
+      <input type="datetime-local" class="form-control" id="publishDate">
+    </div>
+                        </div>
+                        
+                    </div>
+                    <button type="submit" class="btn btn-primary me-2 text-white">
+                      Next
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
                     </div>
                   </div>
-                </div>
-                <div class="container py-4">
-                   <div class="row g-4">
-                     <!-- Card 1 -->
-                     <div class="col-12 col-sm-6 col-lg-4">
-                <div class="card custom-card bg-white">
-                    <div class="card-actions">
-                        <button class="btn btn-outline-primary btn-sm me-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit Project">
-                            <i class="icon-pencil"></i>
-                        </button>
-                        <button class="btn btn-outline-danger btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete Project">
-                            <i class="icon-trash"></i>
-                        </button>
-                    </div>                 
-                    <div class="card-title-centered">Project Title 3</div>                 
-                    <div class="card-footer-custom">
-                          <!-- Blog Button with link -->
-                          <a class="btn btn-sm btn-info text-white" href="index.html">
-                            Blog
-                          </a>
-                          <a href="index.html" class="ms-2 d-flex align-item-center">
-                            <i class="icon-user-follow center-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Author"></i>
-                          </a>
-                          <a href="index.html" class="ms-2">
-                            <i class="icon-tag end-icon fs-5" data-bs-toggle="tooltip" data-bs-placement="bottom" title="category"></i>
-                          </a>
-                        </div>
-                </div>
-            </div>                
+                  <div class="tab-pane fade show active" id="blogcontent" role="tabpanel" aria-labelledby="blogcontent">
+                    <div class="row">
+                      <div class="col-md-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Blog Content Add</h4>
+                  <!-- <p class="card-description">eem Brading </p> -->
+                  <form class="forms-sample">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                              <label for="exampleInputHeadingTag">Title Tag</label>
+                              <div class="input-group">
+                                <select class="form-control" id="exampleInputHeadingTag">
+                                  <option value="h1">H1</option>
+                                  <option value="h2">H2</option>
+                                  <option value="h3">H3</option>
+                                  <option value="h4">H4</option>
+                                  <option value="h5">H5</option>
+                                  <option value="h6">H6</option>
+                                </select>
+                                <span class="input-group-text bg-white" id="exampleInputHeadingTag">
+                                  <i class="icon-arrow-down"></i>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
 
-                     <!-- Card 2 -->
-                     <div class="col-12 col-sm-6 col-lg-4">
-                       <div class="card custom-card bg-white">
-                         <div class="card-actions">
-                           <button class="btn btn-outline-primary btn-sm me-1"><i class="icon-pencil"></i> </button>
-                           <button class="btn btn-outline-danger btn-sm"><i class="icon-trash"></i></button>
-                         </div>
-                         <div class="card-title-centered">Project Title 2</div>
-                         <div class="card-footer-custom">
-                          <!-- Blog Button with link -->
-                          <a class="btn btn-sm btn-info text-white" href="index.html">
-                            Blog
-                          </a>
-                          <a href="index.html" class="ms-2 d-flex align-item-center">
-                            <i class="icon-user-follow center-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Author"></i>
-                          </a>
-                          <a href="index.html" class="ms-2">
-                            <i class="icon-tag end-icon fs-5" data-bs-toggle="tooltip" data-bs-placement="bottom" title="category"></i>
-                          </a>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                      <label for="exampleInputurl1">Section Title 1</label>
+                      <input type="url" class="form-control" id="exampleInputurl1" placeholder="url">
+                    </div>
                         </div>
-                       </div>
-                     </div>                 
-
-                     <!-- Card 3 -->
-                     <div class="col-12 col-sm-6 col-lg-4">
-                       <div class="card custom-card bg-white">
-                         <div class="card-actions">
-                           <button class="btn btn-outline-primary btn-sm me-1"><i class="icon-pencil"></i> </button>
-                           <button class="btn btn-outline-danger btn-sm"><i class="icon-trash"></i></button>
-                         </div>
-                         <div class="card-title-centered">Project Title 3</div>
-                        <div class="card-footer-custom">
-                          <!-- Blog Button with link -->
-                          <a class="btn btn-sm btn-info text-white" href="index.html">
-                            Blog
-                          </a>
-                          <a href="index.html" class="ms-2 d-flex align-item-center">
-                            <i class="icon-user-follow center-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Author"></i>
-                          </a>
-                          <a href="index.html" class="ms-2">
-                            <i class="icon-tag end-icon fs-5" data-bs-toggle="tooltip" data-bs-placement="bottom" title="category"></i>
-                          </a>
-                        </div>
-                       </div>
-                     </div>
-                   </div>
-                 </div>
+                        <div class="col-lg-12">
+                  <!-- <h4 class="card-title">Quill Editor</h4> -->
+                  <div class="ql-toolbar ql-snow"><span class="ql-formats"><span class="ql-header ql-picker"><span class="ql-picker-label" tabindex="0" role="button" aria-expanded="false" aria-controls="ql-picker-options-0"><svg viewBox="0 0 18 18"> <polygon class="ql-stroke" points="7 11 9 13 11 11 7 11"></polygon> <polygon class="ql-stroke" points="7 7 9 5 11 7 7 7"></polygon> </svg></span><span class="ql-picker-options" aria-hidden="true" tabindex="-1" id="ql-picker-options-0"><span tabindex="0" role="button" class="ql-picker-item" data-value="1"></span><span tabindex="0" role="button" class="ql-picker-item" data-value="2"></span><span tabindex="0" role="button" class="ql-picker-item ql-selected"></span></span></span><select class="ql-header" style="display: none;"><option value="1"></option><option value="2"></option><option selected="selected"></option></select></span><span class="ql-formats"><button type="button" class="ql-bold"><svg viewBox="0 0 18 18"> <path class="ql-stroke" d="M5,4H9.5A2.5,2.5,0,0,1,12,6.5v0A2.5,2.5,0,0,1,9.5,9H5A0,0,0,0,1,5,9V4A0,0,0,0,1,5,4Z"></path> <path class="ql-stroke" d="M5,9h5.5A2.5,2.5,0,0,1,13,11.5v0A2.5,2.5,0,0,1,10.5,14H5a0,0,0,0,1,0,0V9A0,0,0,0,1,5,9Z"></path> </svg></button><button type="button" class="ql-italic"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="7" x2="13" y1="4" y2="4"></line> <line class="ql-stroke" x1="5" x2="11" y1="14" y2="14"></line> <line class="ql-stroke" x1="8" x2="10" y1="14" y2="4"></line> </svg></button><button type="button" class="ql-underline"><svg viewBox="0 0 18 18"> <path class="ql-stroke" d="M5,3V9a4.012,4.012,0,0,0,4,4H9a4.012,4.012,0,0,0,4-4V3"></path> <rect class="ql-fill" height="1" rx="0.5" ry="0.5" width="12" x="3" y="15"></rect> </svg></button></span><span class="ql-formats"><button type="button" class="ql-image"><svg viewBox="0 0 18 18"> <rect class="ql-stroke" height="10" width="12" x="3" y="4"></rect> <circle class="ql-fill" cx="6" cy="7" r="1"></circle> <polyline class="ql-even ql-fill" points="5 12 5 11 7 9 8 10 11 7 13 9 13 12 5 12"></polyline> </svg></button><button type="button" class="ql-code-block"><svg viewBox="0 0 18 18"> <polyline class="ql-even ql-stroke" points="5 7 3 9 5 11"></polyline> <polyline class="ql-even ql-stroke" points="13 7 15 9 13 11"></polyline> <line class="ql-stroke" x1="10" x2="8" y1="5" y2="13"></line> </svg></button></span></div><div id="quillExample1" class="quill-container ql-container ql-snow"><div class="ql-editor ql-blank" data-gramm="false" contenteditable="true" data-placeholder="Compose an epic..."><p><br></p></div><div class="ql-clipboard" contenteditable="true" tabindex="-1"></div><div class="ql-tooltip ql-hidden"><a class="ql-preview" rel="noopener noreferrer" target="_blank" href="about:blank"></a><input type="text" data-formula="e=mc^2" data-link="https://quilljs.com" data-video="Embed URL"><a class="ql-action"></a><a class="ql-remove"></a></div></div>
+            </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary me-2 text-white mt-3">
+                      Next
+                    </button>
+                  </form>
+                </div>
+              </div>
+                  </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -432,19 +521,24 @@
       </div>
       <!-- main-panel ends -->
     </div>
-    <!-- page-body-wraśśpper ends -->
+    <!-- page-body-wrapper ends -->
   </div>
   <!-- container-scroller -->
- <script>
-        // Initialize Bootstrap tooltips
-        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-            return new bootstrap.Tooltip(tooltipTriggerEl);
-        });
-    </script>
+<script>
+  document.getElementById("toggleBlogImage").addEventListener("change", function () {
+    const blogImageCard = document.getElementById("blogImageCard");
+    if (this.checked) {
+      blogImageCard.style.display = "block";
+    } else {
+      blogImageCard.style.display = "none";
+    }
+  });
+</script>
+
   <!-- plugins:js -->
   <script src="../assets/vendors/js/vendor.bundle.base.js"></script>
   <script src="../assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+  <script src="../../../assets/vendors/dropify/dropify.min.js"></script>
   <!-- endinject -->
   <!-- Plugin js for this page -->
   <script src="../assets/vendors/chart.js/chart.umd.js"></script>
@@ -456,10 +550,12 @@
   <script src="../assets/js/template.js"></script>
   <script src="../assets/js/settings.js"></script>
   <script src="../assets/js/todolist.js"></script>
+  <script src="../../../assets/vendors/quill/quill.min.js"></script>
   <!-- endinject -->
   <!-- Custom js for this page-->
   <script src="../assets/js/jquery.cookie.js" type="text/javascript"></script>
   <script src="../assets/js/dashboard.js"></script>
+  <script src="../../../assets/js/dropify.js"></script>
   <!-- <script src="../assets/js/Chart.roundedBarCharts.js"></script> -->
   <!-- End custom js for this page-->
 </body>

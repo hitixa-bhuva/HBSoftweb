@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -63,18 +63,17 @@
     </div>
     <div>
       <a class="navbar-brand brand-logo" href="index.html">
-        <img src="../assets/images/HB-Icon9.svg" alt="logo">
-        <img src="../assets/images/icon-second.svg" alt="logo" style="max-width: 81%;">
+        <img src="../assets/images/logo.svg" alt="logo">
       </a>
       <a class="navbar-brand brand-logo-mini" href="index.html">
-        <img src="../assets/images/HB-Icon9.svg" alt="logo">
+        <img src="../assets/images/logo-mini.svg" alt="logo">
       </a>
     </div>
   </div>
   <div class="navbar-menu-wrapper d-flex align-items-top">
     <ul class="navbar-nav">
       <li class="nav-item fw-semibold d-none d-lg-block ms-0">
-        <h1 class="welcome-text">Welcome, <span class="text-black fw-bold"><img src="/assets/images/hand.gif" width="50" alt=""></span></h1>
+         <h1 class="welcome-text">Welcome, <span class="text-black fw-bold"><img src="/assets/images/hand.gif" width="50" alt=""></span></h1>
 
       </li>
     </ul>
@@ -296,7 +295,7 @@
 </div>
       <!-- partial -->
       <!-- partial:partials/_sidebar.html -->
-      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+    <nav class="sidebar sidebar-offcanvas" id="sidebar">
   <ul class="nav">
     <li class="nav-item">
       <a class="nav-link" href="index.html">
@@ -317,7 +316,7 @@
         <!-- <span class="badge badge-outline-primary rounded fw-bold"> PRO </span> -->
       </a>
     </li>
-     <li class="nav-item">
+    <li class="nav-item">
       <a class="nav-link" href="Categories.html">
         <i class="mdi mdi-cube-outline menu-icon"></i>
         <span class="menu-title">Categories</span>
@@ -325,6 +324,7 @@
       </a>
     </li>
   </ul>
+
 </nav>
 
       <!-- partial -->
@@ -333,89 +333,180 @@
           <div class="row">
             <div class="col-sm-12">
               <div class="home-tab">
-                <div class="d-sm-flex align-items-center justify-content-end border-bottom">
-                  <div>
-                    <div class="btn-wrapper">
-                      <a href="addproject.html" class="btn btn-primary text-white me-0"><i class="icon-download"></i> Add</a>
-                    </div>
+                <div class="d-sm-flex align-items-center justify-content-end border-bottom py-2">
+                  <!-- Search Input with Icon -->
+                  <div class="input-group input-group-sm me-2" style="min-width: 70px; width: 15%;">
+                    <span class="input-group-text bg-white border-end-0">
+                      <i class="icon-search text-muted"></i>
+                    </span>
+                    <input type="text" class="form-control border-start-0" placeholder="Search Project...">
+                  </div>
+                
+                  <!-- Add Button -->
+                  <div class="btn-wrapper">
+                    <a href="blogadd.html" class="btn btn-primary text-white">
+                      <i class="icon-download"></i> Blog Add
+                    </a>
                   </div>
                 </div>
-                <div class="container py-4">
-                   <div class="row g-4">
-                     <!-- Card 1 -->
-                     <div class="col-12 col-sm-6 col-lg-4">
-                <div class="card custom-card bg-white">
-                    <div class="card-actions">
-                        <button class="btn btn-outline-primary btn-sm me-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit Project">
-                            <i class="icon-pencil"></i>
-                        </button>
-                        <button class="btn btn-outline-danger btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete Project">
-                            <i class="icon-trash"></i>
-                        </button>
-                    </div>                 
-                    <div class="card-title-centered">Project Title 3</div>                 
-                    <div class="card-footer-custom">
-                          <!-- Blog Button with link -->
-                          <a class="btn btn-sm btn-info text-white" href="index.html">
-                            Blog
-                          </a>
-                          <a href="index.html" class="ms-2 d-flex align-item-center">
-                            <i class="icon-user-follow center-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Author"></i>
-                          </a>
-                          <a href="index.html" class="ms-2">
-                            <i class="icon-tag end-icon fs-5" data-bs-toggle="tooltip" data-bs-placement="bottom" title="category"></i>
-                          </a>
+                <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <a href="#" class="text-decoration-none text-dark">
+                <div class="card bloglist-card position-relative">
+                
+                  <!-- Blog Image -->
+                  <img src="/assets/images/AdvertisingAgency.jpg" alt="Blog Image" class="bloglist-image">
+                
+                  <!-- Blog Content -->
+                  <div class="bloglist-content">
+                    <h3 class="bloglist-title">What Does an Advertising Agency Do? A Client's Guide</h3>
+                  
+                    <div class="bloglist-meta mb-2">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <span class="bloglist-category mb-2 d-inline-block">Technology</span>
                         </div>
+                      </div>
+                    
+                      <div class="d-flex justify-content-between mt-2">
+                        <div>
+                          <span class="bloglist-date">
+                            <i class="icon-calendar me-1"></i>
+                            June 24, 2025 03:48 PM
+                          </span>
+                        </div>
+                        <div>
+                          <span class="bloglist-author">
+                            <i class="icon-user me-1"></i>
+                            John Doe
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <!-- Action Buttons -->
+                     <div class="action-buttons-container mt-3">
+                <div class="tooltip-wrapper">
+                    <button class="holo-btn edit-btn">
+                        <i class="icon-pencil"></i>
+                    </button>
                 </div>
-            </div>                
-
-                     <!-- Card 2 -->
-                     <div class="col-12 col-sm-6 col-lg-4">
-                       <div class="card custom-card bg-white">
-                         <div class="card-actions">
-                           <button class="btn btn-outline-primary btn-sm me-1"><i class="icon-pencil"></i> </button>
-                           <button class="btn btn-outline-danger btn-sm"><i class="icon-trash"></i></button>
-                         </div>
-                         <div class="card-title-centered">Project Title 2</div>
-                         <div class="card-footer-custom">
-                          <!-- Blog Button with link -->
-                          <a class="btn btn-sm btn-info text-white" href="index.html">
-                            Blog
-                          </a>
-                          <a href="index.html" class="ms-2 d-flex align-item-center">
-                            <i class="icon-user-follow center-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Author"></i>
-                          </a>
-                          <a href="index.html" class="ms-2">
-                            <i class="icon-tag end-icon fs-5" data-bs-toggle="tooltip" data-bs-placement="bottom" title="category"></i>
-                          </a>
+                <div class="tooltip-wrapper">
+                    <button class="holo-btn delete-btn">
+                        <i class="icon-trash"></i>
+                    </button>
+                </div>
+            </div>
+                  </div>
+                
+                </div>
+              </a>
+            </div>
+           <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <a href="#" class="text-decoration-none text-dark">
+                <div class="card bloglist-card position-relative">
+                
+                  <!-- Blog Image -->
+                  <img src="/assets/images/AdvertisingAgency.jpg" alt="Blog Image" class="bloglist-image">
+                
+                  <!-- Blog Content -->
+                  <div class="bloglist-content">
+                    <h3 class="bloglist-title">What Does an Advertising Agency Do? A Client's Guide</h3>
+                  
+                    <div class="bloglist-meta mb-2">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <span class="bloglist-category mb-2 d-inline-block">Technology</span>
                         </div>
-                       </div>
-                     </div>                 
-
-                     <!-- Card 3 -->
-                     <div class="col-12 col-sm-6 col-lg-4">
-                       <div class="card custom-card bg-white">
-                         <div class="card-actions">
-                           <button class="btn btn-outline-primary btn-sm me-1"><i class="icon-pencil"></i> </button>
-                           <button class="btn btn-outline-danger btn-sm"><i class="icon-trash"></i></button>
-                         </div>
-                         <div class="card-title-centered">Project Title 3</div>
-                        <div class="card-footer-custom">
-                          <!-- Blog Button with link -->
-                          <a class="btn btn-sm btn-info text-white" href="index.html">
-                            Blog
-                          </a>
-                          <a href="index.html" class="ms-2 d-flex align-item-center">
-                            <i class="icon-user-follow center-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Author"></i>
-                          </a>
-                          <a href="index.html" class="ms-2">
-                            <i class="icon-tag end-icon fs-5" data-bs-toggle="tooltip" data-bs-placement="bottom" title="category"></i>
-                          </a>
+                      </div>
+                    
+                      <div class="d-flex justify-content-between mt-2">
+                        <div>
+                          <span class="bloglist-date">
+                            <i class="icon-calendar me-1"></i>
+                            June 24, 2025 03:48 PM
+                          </span>
                         </div>
-                       </div>
-                     </div>
-                   </div>
-                 </div>
+                        <div>
+                          <span class="bloglist-author">
+                            <i class="icon-user me-1"></i>
+                            John Doe
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <div class="action-buttons-container mt-3">
+                <div class="tooltip-wrapper">
+                    <button class="holo-btn edit-btn">
+                        <i class="icon-pencil"></i>
+                    </button>
+                </div>
+                <div class="tooltip-wrapper">
+                    <button class="holo-btn delete-btn">
+                        <i class="icon-trash"></i>
+                    </button>
+                </div>
+            </div>
+                  </div>
+                
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <a href="#" class="text-decoration-none text-dark">
+                <div class="card bloglist-card position-relative">
+                
+                  <!-- Blog Image -->
+                  <img src="/assets/images/AdvertisingAgency.jpg" alt="Blog Image" class="bloglist-image">
+                
+                  <!-- Blog Content -->
+                  <div class="bloglist-content">
+                    <h3 class="bloglist-title">What Does an Advertising Agency Do? A Client's Guide</h3>
+                  
+                    <div class="bloglist-meta mb-2">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <span class="bloglist-category mb-2 d-inline-block">Technology</span>
+                        </div>
+                      </div>
+                    
+                      <div class="d-flex justify-content-between mt-2">
+                        <div>
+                          <span class="bloglist-date">
+                            <i class="icon-calendar me-1"></i>
+                            June 24, 2025 03:48 PM
+                          </span>
+                        </div>
+                        <div>
+                          <span class="bloglist-author">
+                            <i class="icon-user me-1"></i>
+                            John Doe
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <div class="action-buttons-container mt-3">
+                <div class="tooltip-wrapper">
+                    <button class="holo-btn edit-btn">
+                        <i class="icon-pencil"></i>
+                    </button>
+                </div>
+                <div class="tooltip-wrapper">
+                    <button class="holo-btn delete-btn">
+                        <i class="icon-trash"></i>
+                    </button>
+                </div>
+            </div>
+                  </div>
+                
+                </div>
+              </a>
+            </div>
+        </div>
+    </div>
               </div>
             </div>
           </div>

@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Star Admin2</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="../assets/vendors/feather/feather.css">
+  <link rel="stylesheet" href="../assets/vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../assets/vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="../assets/vendors/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../assets/vendors/typicons/typicons.css">
+  <link rel="stylesheet" href="../assets/vendors/simple-line-icons/css/simple-line-icons.css">
+  <link rel="stylesheet" href="../assets/vendors/css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="../assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" href="../../../assets/vendors/dropify/dropify.min.css">
+  <link rel="stylesheet" href="../../../assets/vendors/jquery-file-upload/uploadfile.css">
+
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <link rel="stylesheet" href="../assets/vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+  <link rel="stylesheet" type="text/css" href="../assets/js/select.dataTables.min.css">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../assets/css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../assets/images/favicon.png">
+</head>
+
+<body class="with-welcome-text">
+  <div class="container-scroller">
+    <div class="row p-0 m-0 proBanner" id="proBanner">
+      <div class="col-md-12 p-0 m-0">
+        <div class="card-body card-body-padding px-3 d-flex align-items-center justify-content-between">
+          <div class="ps-lg-3">
+            <div class="d-flex align-items-center justify-content-between">
+              <p class="mb-0 fw-medium me-3 buy-now-text">
+                Free 24/7 customer support, updates, and more with this
+                template!
+              </p>
+              <a href="https://www.bootstrapdash.com/product/star-admin-pro/" target="_blank" class="btn me-2 buy-now-btn border-0">Buy Now</a>
+            </div>
+          </div>
+          <div class="d-flex align-items-center justify-content-between">
+            <a href="https://www.bootstrapdash.com/product/star-admin-pro/"><i class="ti-home me-3 text-white"></i></a>
+            <button id="bannerClose" class="btn border-0 p-0">
+              <i class="ti-close text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
+  <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
+    <div class="me-3">
+      <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-bs-toggle="minimize">
+        <span class="icon-menu"></span>
+      </button>
+    </div>
+    <div>
+      <a class="navbar-brand brand-logo" href="index.html">
+        <img src="../assets/images/HB-Icon9.svg" alt="logo">
+        <img src="../assets/images/icon-second.svg" alt="logo" style="max-width: 81%;">
+      </a>
+      <a class="navbar-brand brand-logo-mini" href="index.html">
+        <img src="../assets/images/HB-Icon9.svg" alt="logo">
+      </a>
+    </div>
+  </div>
+  <div class="navbar-menu-wrapper d-flex align-items-top">
+    <ul class="navbar-nav">
+      <li class="nav-item fw-semibold d-none d-lg-block ms-0">
+         <h1 class="welcome-text">Welcome, <span class="text-black fw-bold"><img src="/assets/images/hand.gif" width="50" alt=""></span></h1>
+
+      </li>
+    </ul>
+    <ul class="navbar-nav ms-auto">
+      
+      <li class="nav-item dropdown d-none d-lg-block user-dropdown">
+        <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+          <img class="img-xs rounded-circle" src="../assets/images/faces/face8.jpg" alt="Profile image"> </a>
+        <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+          <div class="dropdown-header text-center">
+            <img class="img-md rounded-circle" src="../assets/images/faces/face8.jpg" alt="Profile image">
+            <p class="mb-1 mt-3 fw-semibold">Allen Moreno</p>
+            <p class="fw-light text-muted mb-0">allenmoreno@gmail.com</p>
+          </div>
+          <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-account-outline text-primary me-2"></i> My
+            Profile <span class="badge badge-pill badge-danger">1</span></a>
+          <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-message-text-outline text-primary me-2"></i>
+            Messages</a>
+          <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-calendar-check-outline text-primary me-2"></i>
+            Activity</a>
+          <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-help-circle-outline text-primary me-2"></i>
+            FAQ</a>
+          <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Sign Out</a>
+        </div>
+      </li>
+    </ul>
+    <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-bs-toggle="offcanvas">
+      <span class="mdi mdi-menu"></span>
+    </button>
+  </div>
+</nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_settings-panel.html -->
+      <div class="theme-setting-wrapper">
+  <div id="cta-trigger">
+    <div class="cta-img">  
+      <img src="../assets/images/crown-black.svg" alt="bootstrapdash-crown" class="crown-black">
+      <img src="../assets/images/crown-white.svg" alt="bootstrapdash-crown" class="crown-white cta-hover">
+    </div>
+    <div class="cta-text mt-2">
+      <p class="text-black fw-bold">
+        <a href="https://www.bootstrapdash.com/product/star-admin-pro" target="_blank" class="text-black">
+          Upgrade to Pro
+        </a>
+      </p>
+    </div>
+  </div>
+  <div id="settings-trigger"><i class="ti-settings"></i></div>
+  <div id="theme-settings" class="settings-panel">
+    <i class="settings-close ti-close"></i>
+    <p class="settings-heading">SIDEBAR SKINS</p>
+    <div class="sidebar-bg-options selected" id="sidebar-light-theme">
+      <div class="img-ss rounded-circle bg-light border me-3"></div>Light
+    </div>
+    <div class="sidebar-bg-options" id="sidebar-dark-theme">
+      <div class="img-ss rounded-circle bg-dark border me-3"></div>Dark
+    </div>
+    <p class="settings-heading mt-2">HEADER SKINS</p>
+    <div class="color-tiles mx-0 px-4">
+      <div class="tiles success"></div>
+      <div class="tiles warning"></div>
+      <div class="tiles danger"></div>
+      <div class="tiles info"></div>
+      <div class="tiles dark"></div>
+      <div class="tiles default"></div>
+    </div>
+  </div>
+</div>
+<div id="right-sidebar" class="settings-panel">
+  <i class="settings-close ti-close"></i>
+  <ul class="nav nav-tabs border-top" id="setting-panel" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="todo-tab" data-bs-toggle="tab" href="#todo-section" role="tab" aria-controls="todo-section" aria-expanded="true">TO DO LIST</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="chats-tab" data-bs-toggle="tab" href="#chats-section" role="tab" aria-controls="chats-section">CHATS</a>
+    </li>
+  </ul>
+  <div class="tab-content" id="setting-content">
+    <div class="tab-pane fade show active scroll-wrapper" id="todo-section" role="tabpanel" aria-labelledby="todo-section">
+      <div class="add-items d-flex px-3 mb-0">
+        <form class="form w-100">
+          <div class="form-group d-flex">
+            <input type="text" class="form-control todo-list-input" placeholder="Add To-do">
+            <button type="submit" class="add btn btn-primary todo-list-add-btn" id="add-task">Add</button>
+          </div>
+        </form>
+      </div>
+      <div class="list-wrapper px-3">
+        <ul class="d-flex flex-column-reverse todo-list">
+          <li>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="checkbox" type="checkbox">
+                Team review meeting at 3.00 PM
+              </label>
+            </div>
+            <i class="remove ti-close"></i>
+          </li>
+          <li>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="checkbox" type="checkbox">
+                Prepare for presentation
+              </label>
+            </div>
+            <i class="remove ti-close"></i>
+          </li>
+          <li>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="checkbox" type="checkbox">
+                Resolve all the low priority tickets due today
+              </label>
+            </div>
+            <i class="remove ti-close"></i>
+          </li>
+          <li class="completed">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="checkbox" type="checkbox" checked="">
+                Schedule meeting for next week
+              </label>
+            </div>
+            <i class="remove ti-close"></i>
+          </li>
+          <li class="completed">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="checkbox" type="checkbox" checked="">
+                Project review
+              </label>
+            </div>
+            <i class="remove ti-close"></i>
+          </li>
+        </ul>
+      </div>
+      <h4 class="px-3 text-muted mt-5 fw-light mb-0">Events</h4>
+      <div class="events pt-4 px-3">
+        <div class="wrapper d-flex mb-2">
+          <i class="ti-control-record text-primary me-2"></i>
+          <span>Feb 11 2018</span>
+        </div>
+        <p class="mb-0 fw-thin text-gray">Creating component page build a js</p>
+        <p class="text-gray mb-0">The total number of sessions</p>
+      </div>
+      <div class="events pt-4 px-3">
+        <div class="wrapper d-flex mb-2">
+          <i class="ti-control-record text-primary me-2"></i>
+          <span>Feb 7 2018</span>
+        </div>
+        <p class="mb-0 fw-thin text-gray">Meeting with Alisa</p>
+        <p class="text-gray mb-0 ">Call Sarah Graves</p>
+      </div>
+    </div>
+    <!-- To do section tab ends -->
+    <div class="tab-pane fade" id="chats-section" role="tabpanel" aria-labelledby="chats-section">
+      <div class="d-flex align-items-center justify-content-between border-bottom">
+        <p class="settings-heading border-top-0 mb-3 pl-3 pt-0 border-bottom-0 pb-0">Friends</p>
+        <small class="settings-heading border-top-0 mb-3 pt-0 border-bottom-0 pb-0 pr-3 fw-normal">See All</small>
+      </div>
+      <ul class="chat-list">
+        <li class="list active">
+          <div class="profile"><img src="../assets/images/faces/face1.jpg" alt="image"><span class="online"></span></div>
+          <div class="info">
+            <p>Thomas Douglas</p>
+            <p>Available</p>
+          </div>
+          <small class="text-muted my-auto">19 min</small>
+        </li>
+        <li class="list">
+          <div class="profile"><img src="../assets/images/faces/face2.jpg" alt="image"><span class="offline"></span></div>
+          <div class="info">
+            <div class="wrapper d-flex">
+              <p>Catherine</p>
+            </div>
+            <p>Away</p>
+          </div>
+          <div class="badge badge-success badge-pill my-auto mx-2">4</div>
+          <small class="text-muted my-auto">23 min</small>
+        </li>
+        <li class="list">
+          <div class="profile"><img src="../assets/images/faces/face3.jpg" alt="image"><span class="online"></span></div>
+          <div class="info">
+            <p>Daniel Russell</p>
+            <p>Available</p>
+          </div>
+          <small class="text-muted my-auto">14 min</small>
+        </li>
+        <li class="list">
+          <div class="profile"><img src="../assets/images/faces/face4.jpg" alt="image"><span class="offline"></span></div>
+          <div class="info">
+            <p>James Richardson</p>
+            <p>Away</p>
+          </div>
+          <small class="text-muted my-auto">2 min</small>
+        </li>
+        <li class="list">
+          <div class="profile"><img src="../assets/images/faces/face5.jpg" alt="image"><span class="online"></span></div>
+          <div class="info">
+            <p>Madeline Kennedy</p>
+            <p>Available</p>
+          </div>
+          <small class="text-muted my-auto">5 min</small>
+        </li>
+        <li class="list">
+          <div class="profile"><img src="../assets/images/faces/face6.jpg" alt="image"><span class="online"></span></div>
+          <div class="info">
+            <p>Sarah Graves</p>
+            <p>Available</p>
+          </div>
+          <small class="text-muted my-auto">47 min</small>
+        </li>
+      </ul>
+    </div>
+    <!-- chat tab ends -->
+  </div>
+</div>
+      <!-- partial -->
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+  <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">
+        <i class="menu-icon mdi mdi-layers-outline"></i>
+        <span class="menu-title">Projects</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="bloglist.html">
+        <i class="mdi mdi-grid-large menu-icon position-relative"></i>
+        <span class="menu-title">Blog</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Authors.html">
+        <i class="mdi mdi-book menu-icon"></i>
+        <span class="menu-title">Authors</span>
+        <!-- <span class="badge badge-outline-primary rounded fw-bold"> PRO </span> -->
+      </a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="Categories.html">
+        <i class="mdi mdi-cube-outline menu-icon"></i>
+        <span class="menu-title">Categories</span>
+        <!-- <span class="badge badge-outline-primary rounded fw-bold"> PRO </span> -->
+      </a>
+    </li>
+  </ul>
+</nav>
+
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="home-tab">
+                <div class="d-sm-flex align-items-center justify-content-between border-bottom">
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active ps-0" id="home-tab" data-bs-toggle="tab" href="#AddAuthors" role="tab" aria-controls="AddAuthors" aria-selected="true">Add Authors</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#AllAuthors" role="tab"  aria-selected="false">All Authors</a>
+                    </li>
+                  </ul>
+                  
+                </div>
+                <div class="tab-content tab-content-basic">
+                  <div class="tab-pane fade show active" id="AddAuthors" role="tabpanel" aria-labelledby="AddAuthors">
+                    <div class="row">
+                      <div class="col-md-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Authors Add</h4>
+                  <!-- <p class="card-description">eem Brading </p> -->
+                  <form class="forms-sample">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                      <label for="exampleInputUsername1">Authors Name</label>
+                      <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Username">
+                    </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                      <label for="exampleInputurl1">Authors BIO</label>
+                      <input type="url" class="form-control" id="exampleInputurl1" placeholder="url">
+                    </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                      <label for="exampleInputmetatitle1">Authors Designation</label>
+                      <input type="text" class="form-control" id="exampleInputmetatitle1" placeholder="meta title">
+                    </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                      <label for="exampleInputMetaDescription1">Authors Linkedin Profile</label>
+                      <input type="text" class="form-control" id="exampleInputMetaDescription1" placeholder="Meta Description">
+                    </div>
+                        </div>
+                         <div class="col-lg-4 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">image</h4>
+                  <div class="file-upload-wrapper">
+                    <div id="fileuploader">Upload</div>
+                  </div>
+                </div>
+              </div>
+            </div>                        
+                    </div>
+                    <button type="submit" class="btn btn-primary me-2 text-white">
+                      Add Author
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show active" id="AllAuthors" role="tabpanel" aria-labelledby="AllAuthors">
+                    <div class="row">
+                      <div class="col-sm-12">
+                            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">All Authors</h4>
+                  <!-- <p class="card-description">
+                    Add class <code>.table-striped</code>
+                  </p> -->
+                  <div class="table-responsive">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                            <th>
+                            No
+                          </th>
+                          <th>
+                            Author Name
+                          </th>
+                          <th>
+                            Authors Designation
+                          </th>
+                          <th>
+                            Authors BIO
+                          </th>
+                          <th>
+                            Authors Linkedin Profile
+                          </th>
+                          <th>
+                            Image
+                          </th>
+                          <th>
+                            Actions
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+  <td>1</td>
+  <td>Herman Beck</td>
+  <td>Senior Developer</td>
+  <td>Passionate engineer with expertise in full-stack development and cloud computing.</td>
+  <td><a href="https://www.linkedin.com/in/hermanbeck" target="_blank">linkedin.com/in/hermanbeck</a></td>
+  <td><img src="data:image/png;base64,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" alt="Herman Beck" width="100" height="100"></td>
+  <td>
+    <button class="btn btn-sm btn-outline-primary" title="Edit"><i class="icon-pencil"></i></button>
+    <button class="btn btn-sm btn-outline-danger" title="Delete"><i class="icon-trash"></i></button>
+  </td>
+</tr>
+
+<tr>
+  <td>2</td>
+  <td>Sarah Johnson</td>
+  <td>UI/UX Designer</td>
+  <td>Designs intuitive user interfaces and experiences for web and mobile applications.</td>
+  <td><a href="https://www.linkedin.com/in/sarahjohnson" target="_blank">linkedin.com/in/sarahjohnson</a></td>
+  <td><img src="data:image/png;base64,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" alt="Sarah Johnson" width="100" height="100"></td>
+  <td>
+    <button class="btn btn-sm btn-outline-primary" title="Edit"><i class="icon-pencil"></i></button>
+    <button class="btn btn-sm btn-outline-danger" title="Delete"><i class="icon-trash"></i></button>
+  </td>
+</tr>
+
+<tr>
+  <td>3</td>
+  <td>Michael Lee</td>
+  <td>Data Scientist</td>
+  <td>Specializes in machine learning, data analysis, and predictive modeling.</td>
+  <td><a href="https://www.linkedin.com/in/michaellee" target="_blank">linkedin.com/in/michaellee</a></td>
+  <td><img src="data:image/png;base64,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" alt="Michael Lee" width="100" height="100"></td>
+  <td>
+    <button class="btn btn-sm btn-outline-primary" title="Edit"><i class="icon-pencil"></i></button>
+    <button class="btn btn-sm btn-outline-danger" title="Delete"><i class="icon-trash"></i></button>
+  </td>
+</tr>
+
+<tr>
+  <td>4</td>
+  <td>Linda Perez</td>
+  <td>Marketing Strategist</td>
+  <td>Develops and executes data-driven marketing campaigns and branding strategies.</td>
+  <td><a href="https://www.linkedin.com/in/lindaperez" target="_blank">linkedin.com/in/lindaperez</a></td>
+  <td><img src="data:image/png;base64,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" alt="Linda Perez" width="100" height="100"></td>
+  <td>
+    <button class="btn btn-sm btn-outline-primary" title="Edit"><i class="icon-pencil"></i></button>
+    <button class="btn btn-sm btn-outline-danger" title="Delete"><i class="icon-trash"></i></button>
+  </td>
+</tr>
+
+<tr>
+  <td>5</td>
+  <td>David Kim</td>
+  <td>DevOps Engineer</td>
+  <td>Expert in CI/CD pipelines, infrastructure automation, and cloud deployments.</td>
+  <td><a href="https://www.linkedin.com/in/davidkim" target="_blank">linkedin.com/in/davidkim</a></td>
+  <td><img src="data:image/png;base64,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" alt="David Kim" width="100" height="100"></td>
+  <td>
+    <button class="btn btn-sm btn-outline-primary" title="Edit"><i class="icon-pencil"></i></button>
+    <button class="btn btn-sm btn-outline-danger" title="Delete"><i class="icon-trash"></i></button>
+  </td>
+</tr>
+
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+  <div class="d-sm-flex justify-content-center justify-content-sm-between">
+    <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Premium <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap admin template</a> from BootstrapDash.</span>
+    <span class="float-none float-sm-end d-block mt-1 mt-sm-0 text-center">Copyright © 2023. All rights reserved.</span>
+  </div>
+</footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+<script>
+  document.getElementById("toggleBlogImage").addEventListener("change", function () {
+    const blogImageCard = document.getElementById("blogImageCard");
+    if (this.checked) {
+      blogImageCard.style.display = "block";
+    } else {
+      blogImageCard.style.display = "none";
+    }
+  });
+</script>
+
+  <!-- plugins:js -->
+  <script src="../assets/vendors/js/vendor.bundle.base.js"></script>
+  <script src="../assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+  <script src="../../../assets/vendors/dropify/dropify.min.js"></script>
+  <script src="../../../assets/vendors/jquery-file-upload/jquery.uploadfile.min.js"></script>
+
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <script src="../assets/vendors/chart.js/chart.umd.js"></script>
+  <script src="../assets/vendors/progressbar.js/progressbar.min.js"></script>
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="../assets/js/off-canvas.js"></script>
+  <script src="../assets/js/hoverable-collapse.js"></script>
+  <script src="../assets/js/template.js"></script>
+  <script src="../assets/js/settings.js"></script>
+  <script src="../assets/js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="../assets/js/jquery.cookie.js" type="text/javascript"></script>
+  <script src="../assets/js/dashboard.js"></script>
+  <script src="../../../assets/js/dropify.js"></script>
+  <script src="../../../assets/js/jquery-file-upload.js"></script>
+
+  <!-- <script src="../assets/js/Chart.roundedBarCharts.js"></script> -->
+  <!-- End custom js for this page-->
+</body>
+
+</html>
