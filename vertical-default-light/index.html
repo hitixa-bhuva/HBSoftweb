@@ -279,8 +279,14 @@
           <div class="row">
             <div class="col-sm-12">
               <div class="home-tab">
-                
-                <div class="d-sm-flex align-items-center justify-content-end border-bottom py-2">
+                <div class="d-sm-flex align-items-center justify-content-between border-bottom py-2">
+                  <div>
+                      <button class="back-btn" onclick="history.back()">
+                       <span class="backarrow">←</span>
+                       Back
+                   </button>
+                  </div>
+                  <div class="d-flex justify-content-end">
                   <!-- Search Input with Icon -->
                   <div class="input-group input-group-sm me-2" style="min-width: 70px; width: 15%;">
                     <span class="input-group-text bg-white border-end-0">
@@ -310,7 +316,9 @@
                       <i class="menu-icon mdi mdi-floor-plan"></i> Categorys
                     </a>
                   </div>
+                  </div>
                 </div>
+                
                 <div class="container py-4">
                    <div class="row g-4">
                      <!-- Card 1 -->
