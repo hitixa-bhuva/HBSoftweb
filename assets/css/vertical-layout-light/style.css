@@ -35811,8 +35811,7 @@ div.tagsinput span.tag a {
             width: 50px;
             height: 50px;
             border: 2px solid transparent;
-            background: linear-gradient(45deg, #ff0081, #ff8c00, #40e0d0, #ff0081) padding-box,
-                        linear-gradient(45deg, #ff0081, #ff8c00, #40e0d0, #ff0081) border-box;
+            background: linear-gradient(45deg, #0082ff, #0d7ffd, #408ce0, #00a8ff) padding-box, linear-gradient(45deg, #0066ff, #008cff, #4098e0, #0082ff) border-box;
             background-size: 200% 200%;
             border-radius: 20px;
             cursor: pointer;
@@ -35835,9 +35834,101 @@ div.tagsinput span.tag a {
             background: linear-gradient(45deg, #2ed573, #7bed9f, #2ed573, #00d2d3) padding-box,
                         linear-gradient(45deg, #2ed573, #7bed9f, #2ed573, #00d2d3) border-box;
         }
-
+.holo-bt.eye-btn {
+            background: linear-gradient(45deg, #2eb5d5, #7bb9ed, #2e83d5, #009bd3) padding-box,
+             linear-gradient(45deg, #2e71d5, #7b98ed, #2e89d5, #0064d3) border-box;
+        }
 
         .holo-btn:hover {
             transform: scale(1.1) rotateY(15deg);
             box-shadow: 0 20px 40px #51b1e194;
+        }
+        .editbtn-icon{
+          display: inline-block; 
+          padding: 0.25rem 0.5rem; 
+          font-size: 0.875rem; 
+          color: #0d6efd; 
+          border: 1px solid #0d6efd; 
+          border-radius: 50%; 
+          background-color: transparent; 
+          text-decoration: none; 
+          margin-right: 0.25rem;
+              border-radius: 50%;
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+        background: rgba(102, 126, 234, 0.1);
+    border-color: rgba(102, 126, 234, 0.3);
+    color: #667eea;
+        }
+        .deletebtn-icon{
+          display: inline-block; 
+          padding: 0.25rem 0.5rem; 
+          font-size: 0.875rem; 
+          color: #dc3545; 
+          border: 1px solid #dc3545; 
+          border-radius: 50%; 
+          background-color: transparent; 
+          text-decoration: none;
+              border-radius: 50%;
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(220, 53, 69, 0.1);
+    border-color: rgba(220, 53, 69, 0.3);
+    color: #dc3545;
+        }
+        .card-actions .editbtn-icon:hover {
+    background: #667eea;
+    border-color: #667eea;
+    color: white;
+    transform: scale(1.1);
+}
+.card-actions .deletebtn-icon:hover {
+    background: #dc3545;
+    border-color: #dc3545;
+    color: white;
+    transform: scale(1.1);
+}
+.back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 16px;
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 6px;
+            color: #495057;
+            text-decoration: none;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .back-btn:hover {
+            background-color: #e9ecef;
+            border-color: #adb5bd;
+            color: #212529;
+        }
+
+        .back-btn:active {
+            transform: translateY(1px);
+        }
+
+        .backarrow {
+            font-size: 16px;
         }

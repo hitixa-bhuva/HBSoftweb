@@ -270,26 +270,6 @@
         <span class="menu-title">Projects</span>
       </a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" href="bloglist.html">
-        <i class="mdi mdi-grid-large menu-icon position-relative"></i>
-        <span class="menu-title">Blog</span>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="Authors.html">
-        <i class="mdi mdi-book menu-icon"></i>
-        <span class="menu-title">Authors</span>
-        <!-- <span class="badge badge-outline-primary rounded fw-bold"> PRO </span> -->
-      </a>
-    </li>
-     <li class="nav-item">
-      <a class="nav-link" href="Categories.html">
-        <i class="mdi mdi-cube-outline menu-icon"></i>
-        <span class="menu-title">Categories</span>
-        <!-- <span class="badge badge-outline-primary rounded fw-bold"> PRO </span> -->
-      </a>
-    </li>
   </ul>
 </nav>
 
@@ -299,11 +279,36 @@
           <div class="row">
             <div class="col-sm-12">
               <div class="home-tab">
-                <div class="d-sm-flex align-items-center justify-content-end border-bottom">
-                  <div>
+                
+                <div class="d-sm-flex align-items-center justify-content-end border-bottom py-2">
+                  <!-- Search Input with Icon -->
+                  <div class="input-group input-group-sm me-2" style="min-width: 70px; width: 15%;">
+                    <span class="input-group-text bg-white border-end-0">
+                      <i class="icon-search text-muted"></i>
+                    </span>
+                    <input type="text" class="form-control border-start-0" placeholder="Search Project...">
+                  </div>
+                
+                  <!-- Add Button -->
                     <div class="btn-wrapper">
-                      <a href="addproject.html" class="btn btn-primary text-white me-0"><i class="icon-download"></i> Add</a>
-                    </div>
+                    <a href="addproject.html" class="btn btn-primary text-white">
+                      <i class="icon-plus me-2"></i>Project Add
+                    </a>
+                  </div>
+                  <div class="btn-wrapper">
+                    <a href="bloglist.html" class="btn btn-primary text-white">
+                      <i class="mdi mdi-grid-large menu-icon position-relative"></i> Blog
+                    </a>
+                  </div>
+                  <div class="btn-wrapper">
+                    <a href="Authors.html" class="btn btn-primary text-white">
+                      <i class="menu-icon mdi mdi-account-circle-outline"></i> Authors
+                    </a>
+                  </div>
+                  <div class="btn-wrapper">
+                    <a href="Categories.html" class="btn btn-primary text-white">
+                      <i class="menu-icon mdi mdi-floor-plan"></i> Categorys
+                    </a>
                   </div>
                 </div>
                 <div class="container py-4">
@@ -312,23 +317,23 @@
                      <div class="col-12 col-sm-6 col-lg-4">
                 <div class="card custom-card bg-white">
                     <div class="card-actions">
-                        <button class="btn btn-outline-primary btn-sm me-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit Project">
-                            <i class="icon-pencil"></i>
-                        </button>
-                        <button class="btn btn-outline-danger btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete Project">
+                        <a href="addproject.html" class="editbtn-icon">
+                               <i class="icon-pencil"></i>
+                            </a>
+                          <a href="#" class="deletebtn-icon">
                             <i class="icon-trash"></i>
-                        </button>
+                          </a>
                     </div>                 
-                    <div class="card-title-centered">Project Title 3</div>                 
+                    <div class="card-title-centered">EEM Branding</div>                 
                     <div class="card-footer-custom">
                           <!-- Blog Button with link -->
-                          <a class="btn btn-sm btn-info text-white" href="index.html">
+                          <a class="btn btn-sm btn-info text-white" href="bloglist.html">
                             Blog
                           </a>
-                          <a href="index.html" class="ms-2 d-flex align-item-center">
+                          <a href="Authors.html" class="ms-2 d-flex align-item-center">
                             <i class="icon-user-follow center-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Author"></i>
                           </a>
-                          <a href="index.html" class="ms-2">
+                          <a href="Categories.html" class="ms-2">
                             <i class="icon-tag end-icon fs-5" data-bs-toggle="tooltip" data-bs-placement="bottom" title="category"></i>
                           </a>
                         </div>
@@ -339,19 +344,23 @@
                      <div class="col-12 col-sm-6 col-lg-4">
                        <div class="card custom-card bg-white">
                          <div class="card-actions">
-                           <button class="btn btn-outline-primary btn-sm me-1"><i class="icon-pencil"></i> </button>
-                           <button class="btn btn-outline-danger btn-sm"><i class="icon-trash"></i></button>
+                           <a href="addproject.html" class="editbtn-icon">
+                               <i class="icon-pencil"></i>
+                            </a>
+                          <a href="#" class="deletebtn-icon">
+                            <i class="icon-trash"></i>
+                          </a>
                          </div>
-                         <div class="card-title-centered">Project Title 2</div>
+                         <div class="card-title-centered">Kerol Turf</div>
                          <div class="card-footer-custom">
                           <!-- Blog Button with link -->
-                          <a class="btn btn-sm btn-info text-white" href="index.html">
+                          <a class="btn btn-sm btn-info text-white" href="bloglist.html">
                             Blog
                           </a>
-                          <a href="index.html" class="ms-2 d-flex align-item-center">
+                          <a href="Authors.html" class="ms-2 d-flex align-item-center">
                             <i class="icon-user-follow center-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Author"></i>
                           </a>
-                          <a href="index.html" class="ms-2">
+                          <a href="Categories.html" class="ms-2">
                             <i class="icon-tag end-icon fs-5" data-bs-toggle="tooltip" data-bs-placement="bottom" title="category"></i>
                           </a>
                         </div>
@@ -362,19 +371,23 @@
                      <div class="col-12 col-sm-6 col-lg-4">
                        <div class="card custom-card bg-white">
                          <div class="card-actions">
-                           <button class="btn btn-outline-primary btn-sm me-1"><i class="icon-pencil"></i> </button>
-                           <button class="btn btn-outline-danger btn-sm"><i class="icon-trash"></i></button>
+                           <a href="addproject.html" class="editbtn-icon">
+                               <i class="icon-pencil"></i>
+                            </a>
+                          <a href="#" class="deletebtn-icon">
+                            <i class="icon-trash"></i>
+                          </a>
                          </div>
-                         <div class="card-title-centered">Project Title 3</div>
+                         <div class="card-title-centered">Gami'z Cera</div>
                         <div class="card-footer-custom">
                           <!-- Blog Button with link -->
-                          <a class="btn btn-sm btn-info text-white" href="index.html">
+                          <a class="btn btn-sm btn-info text-white" href="bloglist.html">
                             Blog
                           </a>
-                          <a href="index.html" class="ms-2 d-flex align-item-center">
+                          <a href="Authors.html" class="ms-2 d-flex align-item-center">
                             <i class="icon-user-follow center-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Author"></i>
                           </a>
-                          <a href="index.html" class="ms-2">
+                          <a href="Categories.html" class="ms-2">
                             <i class="icon-tag end-icon fs-5" data-bs-toggle="tooltip" data-bs-placement="bottom" title="category"></i>
                           </a>
                         </div>
