@@ -33450,10 +33450,10 @@ div.tagsinput span.tag a {
 .navbar .navbar-menu-wrapper .navbar-nav .nav-item .welcome-sub-text {
   font-family: "Manrope", sans-serif;
   font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
+  font-weight: 700;
+  font-size: 18px;
   line-height: 22px;
-  color: #8D8D8D;
+  color: #1F3BB3;
   margin-bottom: 0;
   display: none;
 }
@@ -35908,9 +35908,9 @@ div.tagsinput span.tag a {
             gap: 8px;
             padding: 10px 16px;
             background-color: #f8f9fa;
-            border: 1px solid #dee2e6;
+            border: 1px solid #1F3BB3;
             border-radius: 6px;
-            color: #495057;
+            color: #1F3BB3;
             text-decoration: none;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             font-size: 14px;
