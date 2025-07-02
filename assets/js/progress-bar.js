@@ -133,11 +133,11 @@
         autoStyleContainer: false
       },
       from: {
-        color: '#34B1AA',
+        color: '#1F3BB3',
         width: 8
       },
       to: {
-        color: '#34B1AA',
+        color: '#1F3BB3',
         width: 8
       },
       // Set default step function for all animate calls
