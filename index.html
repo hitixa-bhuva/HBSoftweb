@@ -295,42 +295,56 @@
                    <div class="row g-4">
                      <!-- Card 1 -->
                      <div class="col-12 col-sm-6 col-lg-4">
-                <div class="card custom-card bg-white">
-                    <div class="card-actions">
-                        <a href="addproject.html" class="editbtn-icon">
-                               <i class="icon-pencil"></i>
-                            </a>
-                          <a href="#" class="deletebtn-icon">
-                            <i class="icon-trash"></i>
-                          </a>
-                    </div>                 
-                    <div class="card-title-centered">EEM Branding</div>                 
-                    <div class="card-footer-custom">
-                          <!-- Blog Button with link -->
-                          <a class="btn btn-sm btn-info text-white" href="bloglist.html">
-                            Blog
-                          </a>
-                          <a href="Authors.html" class="ms-2 d-flex align-item-center">
-                            <i class="icon-user-follow center-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Author"></i>
-                          </a>
-                          <a href="Categories.html" class="ms-2">
-                            <i class="icon-tag end-icon fs-5" data-bs-toggle="tooltip" data-bs-placement="bottom" title="category"></i>
-                          </a>
+                        <div class="card custom-card bg-white">
+                            <div class="card-actions d-flex justify-content-between">
+                              <div>
+                                <a href="javascript:void(0);" class="me-2 copybtn-icon" onclick="copyCardContent(this)">
+                                <i class="icon-docs" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copy Content"></i>
+                              </a>
+                              </div>
+                              <div class="d-flex">
+                                <a href="addproject.html" class="editbtn-icon">
+                                       <i class="icon-pencil"></i>
+                                    </a>
+                                  <a href="#" class="deletebtn-icon">
+                                    <i class="icon-trash"></i>
+                                  </a>
+                              </div>
+                            </div>                 
+                            <div class="card-title-centered">EEM Branding</div>                 
+                            <div class="card-footer-custom">
+                                  <!-- Blog Button with link -->
+                                  <a class="btn btn-sm btn-info text-white" href="bloglist.html">
+                                    Blog
+                                  </a>
+                                  <a href="Authors.html" class="ms-2 d-flex align-item-center">
+                                    <i class="icon-user-follow center-icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Author"></i>
+                                  </a>
+                                  <a href="Categories.html" class="ms-2">
+                                    <i class="icon-tag end-icon fs-5" data-bs-toggle="tooltip" data-bs-placement="bottom" title="category"></i>
+                                  </a>
+                                </div>
                         </div>
-                </div>
-            </div>                
+                    </div>                
 
                      <!-- Card 2 -->
                      <div class="col-12 col-sm-6 col-lg-4">
                        <div class="card custom-card bg-white">
-                         <div class="card-actions">
-                           <a href="addproject.html" class="editbtn-icon">
-                               <i class="icon-pencil"></i>
-                            </a>
-                          <a href="#" class="deletebtn-icon">
-                            <i class="icon-trash"></i>
-                          </a>
-                         </div>
+                         <div class="card-actions d-flex justify-content-between">
+                              <div>
+                                <a href="javascript:void(0);" class="me-2 copybtn-icon" onclick="copyCardContent(this)">
+                                <i class="icon-docs" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copy Content"></i>
+                              </a>
+                              </div>
+                              <div class="d-flex">
+                                <a href="addproject.html" class="editbtn-icon">
+                                       <i class="icon-pencil"></i>
+                                    </a>
+                                  <a href="#" class="deletebtn-icon">
+                                    <i class="icon-trash"></i>
+                                  </a>
+                              </div>
+                            </div>  
                          <div class="card-title-centered">Kerol Turf</div>
                          <div class="card-footer-custom">
                           <!-- Blog Button with link -->
@@ -350,14 +364,21 @@
                      <!-- Card 3 -->
                      <div class="col-12 col-sm-6 col-lg-4">
                        <div class="card custom-card bg-white">
-                         <div class="card-actions">
-                           <a href="addproject.html" class="editbtn-icon">
-                               <i class="icon-pencil"></i>
-                            </a>
-                          <a href="#" class="deletebtn-icon">
-                            <i class="icon-trash"></i>
-                          </a>
-                         </div>
+                         <div class="card-actions d-flex justify-content-between">
+                              <div>
+                                <a href="javascript:void(0);" class="me-2 copybtn-icon" onclick="copyCardContent(this)">
+                                <i class="icon-docs" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copy Content"></i>
+                              </a>
+                              </div>
+                              <div class="d-flex">
+                                <a href="addproject.html" class="editbtn-icon">
+                                       <i class="icon-pencil"></i>
+                                    </a>
+                                  <a href="#" class="deletebtn-icon">
+                                    <i class="icon-trash"></i>
+                                  </a>
+                              </div>
+                            </div>  
                          <div class="card-title-centered">Gami'z Cera</div>
                         <div class="card-footer-custom">
                           <!-- Blog Button with link -->
@@ -444,6 +465,19 @@
     <!-- page-body-wraśśpper ends -->
   </div>
   <!-- container-scroller -->
+   <script>
+function copyCardContent(el) {
+  const card = el.closest('.card');
+  const title = card.querySelector('.card-title-centered')?.innerText || 'Dummy Content';
+  navigator.clipboard.writeText(title).then(() => {
+   
+  }).catch(() => {
+    alert("Failed to copy");
+  });
+}
+</script>
+
+
  <script>
         // Initialize Bootstrap tooltips
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
