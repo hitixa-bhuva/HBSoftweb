@@ -35378,29 +35378,6 @@ div.tagsinput span.tag a {
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255,255,255,0.2);
         }
-
-        /* .custom-card:hover {
-            transform: translateY(-8px) scale(1.02);
-            box-shadow: 0 30px 60px rgba(0,0,0,0.15), 0 8px 16px rgba(0,0,0,0.1);
-        } */
-
-        /* .custom-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, #667eea, #764ba2, #f093fb, #f5576c);
-            background-size: 300% 100%;
-            animation: shimmer 3s ease-in-out infinite;
-        }
-
-        @keyframes shimmer {
-            0%, 100% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-        } */
-
         .card-actions {
             position: absolute;
             top: 15px;
@@ -35452,12 +35429,13 @@ div.tagsinput span.tag a {
 
         .card-title-centered {
             position: absolute;
-            top: 50%;
+            /* top: 50%; */
             left: 50%;
+                bottom: -26%;
             transform: translate(-50%, -50%);
             font-size: 1.5rem;
             font-weight: 700;
-            color: #2d3748;
+            color: #2d3748 !important;
             text-align: center;
             padding: 0 20px;
             line-height: 1.4;
@@ -35534,33 +35512,12 @@ div.tagsinput span.tag a {
             transform: scale(1.05);
         }
 
-        /* Glassmorphism effect */
-        /* .custom-card::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
-            pointer-events: none;
-        } */
-
-        /* Floating animation */
-        /* .custom-card {
-            animation: float 6s ease-in-out infinite;
-        } */
 
         @keyframes float {
             0%, 100% { transform: translateY(0px); }
             50% { transform: translateY(-5px); }
         }
 
-        /* .custom-card:hover {
-            animation: none;
-        } */
-
-        /* blog list page style */
         .bloglist-card {
             position: relative;
             border: none;
@@ -35568,41 +35525,11 @@ div.tagsinput span.tag a {
             background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
             box-shadow: 0 20px 40px rgba(0,0,0,0.1), 0 4px 8px rgba(0,0,0,0.05);
             overflow: hidden;
-            /* transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255,255,255,0.2);
-            /* animation: float 6s ease-in-out infinite; */
         }
 
-        /* .bloglist-card:hover {
-            transform: translateY(-8px) scale(1.02);
-            box-shadow: 0 30px 60px rgba(0,0,0,0.15), 0 8px 16px rgba(0,0,0,0.1);
-            animation: none;
-        } */
-
-        /* .bloglist-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, #667eea, #764ba2, #f093fb, #f5576c);
-            background-size: 300% 100%;
-            animation: shimmer 3s ease-in-out infinite;
-            z-index: 1;
-        }
-
-        @keyframes shimmer {
-            0%, 100% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-        } */
-
-        /* @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-5px); }
-        } */
-
+      
         .bloglist-actions {
             position: absolute;
             top: 15px;
@@ -35864,10 +35791,22 @@ div.tagsinput span.tag a {
     transition: all 0.3s ease;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
-        background: rgba(102, 126, 234, 0.1);
+        background: #667eea;
     border-color: rgba(102, 126, 234, 0.3);
-    color: #667eea;
+    color: #fff;
         }
+.card-actions .editbtn-icon:hover {
+    background: rgba(102, 126, 234, 0.1);
+    border-color: #667eea;
+    color: #667eea;
+    transform: scale(1.1);
+}
+ .custom-hover-outline:hover {
+    background-color: transparent !important;
+    color: #198754 !important;
+    border: 1px solid #198754 !important;
+  }
+
         .deletebtn-icon{
           display: inline-block; 
           padding: 0.25rem 0.5rem; 
@@ -35878,18 +35817,24 @@ div.tagsinput span.tag a {
           background-color: transparent; 
           text-decoration: none;
               border-radius: 50%;
-    padding: 12px;
-    width: 44px;
-    height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    background: rgba(220, 53, 69, 0.1);
-    border-color: rgba(220, 53, 69, 0.3);
-    color: #dc3545;
+          padding: 12px;
+          width: 44px;
+          height: 44px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.3s ease;
+          backdrop-filter: blur(10px);
+          border: 1px solid rgba(255, 255, 255, 0.2);
+          background: #dc3545;
+          border-color: rgba(220, 53, 69, 0.3);
+          color: #fff;
+        }
+        .card-actions .deletebtn-icon:hover {
+            background: rgba(220, 53, 69, 0.1);
+            border-color: #dc3545;
+            color: #dc3545;
+            transform: scale(1.1);
         }
           .copybtn-icon{
             display: inline-block; 
@@ -35910,28 +35855,19 @@ div.tagsinput span.tag a {
             transition: all 0.3s ease;
             backdrop-filter: blur(10px);
             border: 1px solid #737f8b;
-            background: #737f8b40;
+            background:  #737f8b;
             border-color: #737f8b;
-            color: #737f8b;
+            color: #fff;
+            margin-left: 1rem !important;
           }
-        .card-actions .editbtn-icon:hover {
-    background: #667eea;
-    border-color: #667eea;
-    color: white;
-    transform: scale(1.1);
-}
-.card-actions .deletebtn-icon:hover {
-    background: #dc3545;
-    border-color: #dc3545;
-    color: white;
-    transform: scale(1.1);
-}
-.card-actions .copybtn-icon:hover {
-    background: #737f8b;
+          .card-actions .copybtn-icon:hover {
+    background:#737f8b40;
     border-color: #737f8b;
-    color: white;
+    color: #737f8b;
     transform: scale(1.1);
 }
+
+
 .back-btn {
             display: inline-flex;
             align-items: center;
